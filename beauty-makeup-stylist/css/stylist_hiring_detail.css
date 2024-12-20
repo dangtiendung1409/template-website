@@ -1,0 +1,415 @@
+body {
+        overflow-x: hidden;
+}
+.banner_hiring_detail {
+        position: relative;
+}
+.banner_hiring_detail .banner::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner_hiring_detail .banner .img img {
+        height: 500px;
+}
+
+.banner_hiring_detail .banner .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner_hiring_detail .banner .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner_hiring_detail .banner .content h2 {
+                top: 35%;
+        }
+        .banner_hiring_detail .banner .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+}
+@media (max-width: 575px) {
+        .banner_hiring_detail .banner .content h2 {
+                top: 35%;
+        }
+        .banner_hiring_detail .banner .content h4 {
+                margin-top: 90px;
+                top: 25%;
+        }
+        .banner_hiring_detail .banner .img img {
+                height: 250px;
+        }
+        .detail .img img {
+                height: 350px !important;
+        }
+}
+
+.detail {
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.detail .img {
+        position: relative;
+        margin-bottom: 30px;
+}
+
+.detail .star {
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.detail .img img {
+        height: 580px;
+}
+.detail h3 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #0000007e;
+        margin-top: -10px;
+}
+.detail .price {
+        color: #000;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: -20px;
+}
+
+.detail .text {
+        margin-top: 20px;
+}
+.detail .text p {
+        font-size: 24px;
+        font-weight: 300;
+}
+
+.detail .trademarks {
+        margin: 0 auto;
+}
+
+.detail .trademarks h6 {
+        font-size: 24px;
+        font-weight: 600;
+
+        margin-top: 30px;
+}
+
+.detail .trademarks .thumb {
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+}
+.detail .trademarks .thumb img {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+}
+.detail .time_hiring {
+        display: flex;
+        align-items: end;
+}
+.detail .time_hiring h6 {
+        margin-right: 20px;
+}
+.detail .time_hiring ul li {
+        border: 1px solid #000;
+        position: relative;
+        padding: 4px;
+        margin-right: 20px;
+        align-items: center;
+        margin-bottom: 0;
+        border-radius: 5%;
+}
+
+.detail .time_hiring ul li p {
+        margin-bottom: 0;
+        font-size: 20px;
+}
+.detail .time_hiring ul li i {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 8px;
+        border-radius: 50%;
+        padding: 1px;
+        background-color: #000;
+        color: #ffff;
+        opacity: 0;
+}
+
+.detail .time_hiring ul li.active i {
+        opacity: 1;
+}
+.select .number {
+        margin-top: 10px;
+}
+
+.select .number .hour {
+        display: flex;
+        align-items: center;
+}
+.select .number .hour h6 {
+        font-weight: 300;
+        font-size: 24px;
+}
+.select .number .hour input {
+        width: 10%;
+        padding: 1px;
+        text-align: center;
+        border: 1px solid #504e4e7a;
+        margin: 0 10px;
+        font-size: 24px;
+}
+.select .number .hour .typeClick {
+        background-color: #000;
+        padding: 8px 12px;
+        text-align: center;
+        font-size: 14px;
+        color: #ffff;
+}
+
+.detail h6 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 0;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        text-decoration: underline;
+}
+.detail .table {
+        margin-top: 30px;
+}
+.detail .table h6 {
+        font-size: 24px;
+        font-weight: 600;
+}
+
+.detail .table .around p {
+        font-size: 16px;
+        margin-bottom: -5px;
+}
+.detail .table .request p {
+        font-size: 16px;
+        margin-bottom: 0px;
+}
+.detail .book {
+        background-image: url(../img_1/bg/bg_table_1.jpg);
+        background-size: cover;
+        padding: 50px;
+        border-radius: 20px;
+        margin-top: 40px;
+}
+.detail .book h5 {
+        font-size: 32px;
+        font-weight: 600;
+
+        margin-bottom: 50px;
+}
+.detail .book .infor p {
+        font-size: 24px;
+}
+.detail .book .infor input {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+        font-size: 20px;
+        outline: none;
+        border-radius: 10px;
+}
+.detail .book .address input {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 20px;
+        outline: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+}
+
+.detail .book .request textarea {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 15px;
+        font-size: 20px;
+        outline: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+        border-radius: 10px;
+}
+.detail .book .request button {
+        background-color: transparent;
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 0;
+        margin-top: 35px;
+        font-size: 24px;
+        font-weight: 600;
+}
+.detail .book .request button a {
+        color: #000;
+}
+.detail .book .request button a:hover {
+        color: #ffff;
+}
+.detail .book .request button:hover a {
+        color: #ffff;
+}
+.detail .book .request button:hover {
+        background-color: #000;
+
+        color: #ffff;
+}
+.description .nav-pills .nav-item .nav-link {
+        color: #000;
+        border-radius: 0;
+        margin-right: 20px;
+        font-weight: 600;
+        border-bottom: transparent;
+        font-size: 26px;
+}
+.description .nav-pills .nav-item .nav-link.active {
+        color: black;
+        background-color: transparent;
+        border-bottom: 1px solid #000;
+
+        border-radius: 0;
+        font-weight: 600;
+}
+
+.description .tab-content .tab-pane {
+        margin-top: 30px;
+        border: 1px solid #0000001a;
+        padding: 20px;
+}
+.description .tab-content .content p {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+}
+.description .tab-content .tab-pane .cmt {
+        align-items: center;
+        margin-bottom: 50px;
+}
+.description .tab-content .tab-pane .cmt .img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+}
+.description .tab-content .tab-pane .cmt .content {
+        margin-bottom: 20px;
+}
+.description .tab-content .tab-pane .cmt .content h6 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #000;
+        margin-top: 10px;
+}
+.description .tab-content .tab-pane .cmt .content p {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 300;
+}
+.description .tab-content .tab-pane .cmt .content .icon {
+        margin-bottom: 10px;
+}
+.description .tab-content .tab-pane .cmt .content .icon i {
+        font-size: 12px !important;
+}
+.description .tab-content .tab-pane .cmt .content span {
+        font-size: 20px;
+        color: #0000005f;
+}
+.description .tab-content .tab-pane span {
+        font-size: 14px;
+}
+.description .tab-content .tab-pane p {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+}
+.description .tab-content .tab-pane .review_table {
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+.description .tab-content .tab-pane .review_table span {
+        font-size: 22px;
+        margin-bottom: 30px;
+}
+.description .tab-content .tab-pane .review_table p {
+        font-size: 22px;
+        text-align: left;
+        margin-top: 20px;
+}
+.description .tab-content .tab-pane .review_table .icon {
+        margin-bottom: 30px;
+        transition: 0.5s;
+}
+
+.description .tab-content .tab-pane .review_table textarea {
+        width: 100%;
+        outline: none;
+        padding: 10px;
+        border: 1px solid #0000006a;
+}
+.description .tab-content .tab-pane .review_table input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #0000006a;
+}
+input[type="date" i] {
+        font-weight: 10;
+}
+.description .tab-content .tab-pane .review_table button {
+        margin-top: 50px;
+
+        border-radius: 0;
+        background-color: transparent;
+        border: 2px solid #000;
+        color: #000;
+        padding: 10px 35px;
+
+        transition: 0.5s;
+
+        bottom: 30px;
+
+        font-size: 24px;
+        font-weight: 600;
+}
+.description .tab-content .tab-pane .review_table button:hover {
+        background-color: #000;
+        color: #ffff;
+}
+.description .tab-content .review_table {
+        padding: 30px;
+        margin: 0 auto;
+}
+.txt_red {
+        color: red;
+
+        font-style: italic;
+}

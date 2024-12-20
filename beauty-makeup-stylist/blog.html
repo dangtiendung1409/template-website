@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Passions+Conflict&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Css bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+          <!-- Thư viện slick: https://kenwheeler.github.io/slick/ -->
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+          <link rel="stylesheet" href="css/slick.css" />
+        <!-- Global css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- local css -->
+        <link rel="stylesheet" href="css/blog.css" />
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="nav-box">
+                <a class="navbar-brand" href="javascript:void(0)"><img src="img_1/logo/logo.png" alt="" /></a>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Dịch vụ</a>
+                                <ul class="menu ">
+                                   <li><a href="service_wedding.html"> MAKEUP CÔ DÂU</a></li> 
+                                   <li><a href="service_event.html"> MAKEUP SỰ KIỆN</a></li> 
+                                   <li><a href="service_korea.html"> MAKEUP HÀN QUỐC</a></li> 
+                                   <li><a href="service_concept.html"> MAKEUP CONCEPT</a></li> 
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="stylist_hiring_service.html">Stylist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Kinh nghiệm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-icon">
+                        <a href="javascript:;" class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
+                    <div class="search">
+                        <input type="text" placeholder="Search" />
+                        <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <button class="nav-bar" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+
+            <div class="close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="about.html">GIỚI THIỆU</a></li>
+                <li>
+                    <a href="service.html">DỊCH VỤ</a>
+                    <ul class="submenu">
+                        <li><a href="service_wedding.html"> MAKEUP CÔ DÂU</a></li> 
+                        <li><a href="service_event.html"> MAKEUP SỰ KIỆN</a></li> 
+                        <li><a href="service_korea.html"> MAKEUP HÀN QUỐC</a></li> 
+                        <li><a href="service_concept.html"> MAKEUP CONCEPT</a></li> 
+                    </ul>
+                </li>
+                <li><a href="stylist_hiring_service.html">STYLIST</a></li>
+                <li><a href="blog.html">KINH NGHIỆM</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+        
+            <div class="infor">
+                <h6><i class="fa-solid fa-location-dot"></i> 94C Cao Thắng, P4, Q3</h6>
+                <h6><i class="fa-solid fa-envelope"></i> yentang1212@gmail.com</h6>
+                <h6><i class="fa-solid fa-phone-volume"></i> 0909 601 286</h6>
+            </div>
+            
+           <div class="social">
+            <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+            <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+            <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+            <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+           </div>
+          
+            <h6>© Copyright 2016 | Beauty | All right reserved.</h6>
+           
+        </div>
+    </div>
+
+
+    <div class="banner_blog">
+        <div class="item">
+            <div class="img"><img src="img_1/bg/bg-21.jpg" alt="" /></div>
+            <div class="content">
+               
+                <h2>KINH NGHIỆM <br> <h4>TRANG CHỦ/KINH NGHIỆM</h4></h2>
+            
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-8">
+                    <div class="left">
+                        <div class="card">
+                            <a class="img" href="blog_detail.html"><img src="img_1/blog/experience_1.jpg" alt=""></a> 
+                            <span>Thanh Hà | Thứ hai, 06/03/2023</span>
+                            
+                            <a href="blog_detail.html">Bí quyết để có cặp lông mày đẹp</a>
+                            <h6>Một cặp lông mày được cắt tỉa đẹp, gọn gàng sẽ giúp gương mặt bạn thon gọn và rạng rỡ hơn rất nhiều.</h6>
+                            <h6>Cạo lông mày</h6>
+                            <p>Cạo lông mày có vẻ không khó khăn lắm nhưng thật ra để sở hữu dáng lông mày gọn gàng và đẹp nhất lại không hề đơn giản chút nào. Không chỉ cạo bớt những sợi lông mọc lung tung, bạn còn cần phải xác định đúng dáng lông mày và cân bằng hai bên lông mày phải đồng đều với nhau...</p>
+                            <div class="read_more">
+                                <div class="text"><a href="blog_detail.html">XEM TIẾP</a></div>
+                                <div class="social">
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <a class="img" href="blog_detail2.html"><img src="img_1/blog/experience_3.jpg" alt=""></a> 
+                            <span>Huỳnh Anh | Thứ ba, 21/03/2023</span>
+                            <a href="blog_detail2.html">Makeup che giấu tàn nhang hoàn hảo</a>
+                            <h6>Những nốt tàn nhang xấu xí sẽ được ngụy trang hiệu quả nếu bạn áp dụng những bước trang điểm hoàn hảo dưới đây.</h6>
+                            <h6>Kem che khuyết điểm</h6>
+                            <p>Muốn che giấu được các vết tàn nhang trên khuôn mặt, trước hết bạn nên sử dụng một chút kem che khuyết điểm. Thoa kem che khuyết điểm lên toàn bộ khu vực tàn nhang của bạn, chúng sẽ làm mờ những vết tàn nhang đó, chỉ còn lại những đốm mờ mờ...</p>
+                            <div class="read_more">
+                                <div class="text"><a href="blog_detail2.html">XEM TIẾP</a></div>
+                                <div class="social">
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                           <a class="img" href="blog_detail3.html"><img src="img_1/blog/experience_4.jpg" alt=""></a> 
+                            <span>Hải Băng | Thứ năm, 26/01/2023</span>
+                            <a href="blog_detail3.html">5 bước để sở hữu đôi môi căng mọng</a> 
+                            <h6>Chỉ với 5 bước đơn giản dưới đây, cho dù màu son bạn chọn là đỏ nổi bật hay nude nhẹ nhàng thì đôi môi của bạn cũng căng mọng, gợi cảm chưa từng thấy.</h6>
+                            <h6>1. Sử dụng kem che khuyết điểm</h6>
+                            <p>Trước tiên, bạn thoa một lớp kem che khuyết điểm lên môi. Nó sẽ giúp che đi nếp nhăn trên môi làm chúng căng đầy hơn...</p>
+                            <div class="read_more">
+                                <div class="text"><a href="blog_detail3.html">XEM TIẾP</a></div>
+                                <div class="social">
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a  class="img" href="blog_detail4.html"><img src="img_1/blog/experience_5.jpg" alt=""></a> 
+                            <span>Anh Thư | Thứ tư, 13/04/2023</span>
+                            <a href="blog_detail4.html">5 kiểu tóc nữ đẹp để đi dự tiệc</a>
+                            <h6>Mẹo làm tóc góp phần làm gương mặt trở nên xinh xắn và trẻ trung hơn</h6>
+                            <h6>Tóc xinh dự tiệc</h6>
+                            <p>Ngoài việc dưỡng da và makeup không thể thiếu phần tạo kiểu cho mái tóc của bạn. Bạn nữ sẽ trông xinh hơn nếu biết cách thắt các kiểu tóc như thế này....</p>
+                            <div class="read_more">
+                                <div class="text"><a href="blog_detail4.html">XEM TIẾP</a></div>
+                                <div class="social">
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                                    <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                    
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                    <div class="right">
+                        <div class="avatar">
+                            <img src="img_1/stylist/stylist-5.jpg" alt="">
+                            <p>Beauty makeup & Stylist<br> là studio makeup bao gồm cả dịch vụ thuê stylist. Luôn sử dụng các mỹ phẩm chất lượng hàng đầu.</p>
+                            <div class="social">
+                                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+                            </div>
+                            <div class="look_for">
+                                <div class="row d-flex align-items-center justify-content-between">
+                                    <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                        <input type="text" placeholder="Search" />
+                                    </div>
+                                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                                        <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                                
+                                
+    
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <h4>TỪ KHÓA</h4>
+                            <ul>
+                                <li> <a href="service_wedding.html">Makeup Cô Dâu</a></li>
+                                <li> <a href="service_event.html">Makeup điểm sự kiện</a></li>
+                                <li> <a href="service_concept.html">Makeup Concept</a></li>
+                                <li> <a href="service_korea.html">Makeup Hàn Quốc</a></li>
+                            </ul>
+                        </div>
+                        <div class="related_post">
+                            <h4>BÍ QUYẾT</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-sm-3 col-md-5 col-lg-5">
+                                        <div class="img">
+                                            <img src="img_1/blog/experience_1.jpg" alt="">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-sm-9 col-md-7 col-lg-7">
+                                        <div class="title"> 
+                                            <p>Thứ hai, 06/03/2023</p>
+                                            <a href="blog_detail.html">Bí quyết để có cặp lông mày đẹp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-sm-3 col-md-5 col-lg-5">
+                                        <div class="img">
+                                            <img src="img_1/blog/experience_3.jpg" alt="">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-sm-9 col-md-7 col-lg-7">
+                                        <div class="title"> 
+                                            <p>Thứ ba, 21/03/2023</p>
+                                            <a href="blog_detail2.html">Makeup che giấu tàn nhang hoàn hảo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-sm-3 col-md-5 col-lg-5">
+                                        <div class="img">
+                                            <img src="img_1/blog/experience_4.jpg" alt="">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-sm-9 col-md-7 col-lg-7">
+                                        <div class="title"> 
+                                            <p>Thứ năm, 26/01/2023</p>
+                                            <a href="blog_detail3.html">5 bước để sở hữu đôi môi căng mọng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-sm-3 col-md-5 col-lg-5">
+                                        <div class="img">
+                                            <img src="img_1/blog/experience_5.jpg" alt="">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-sm-9 col-md-7 col-lg-7">
+                                        <div class="title"> 
+                                            <p>Thứ tư, 13/04/2023</p>
+                                            <a href="blog_detail4.html">5 kiểu tóc nữ đẹp để đi dự tiệc</a>
+                                        </div>
+                                    </div>
+                                </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+  <div class="trademark">
+    <div class="container">
+        <div class="slide-inner">
+            <div class="slide-item">
+                <div class="col">
+                    <img src="img_1/logo/logo_chanel1.png" alt="">
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="col">
+                    <img src="img_1/logo/Untitled-2.png" alt="">
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="col">
+                    <img src="img_1/logo/dior_2.png" alt="">
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="col">
+                    <img src="img_1/logo/Untitled-4.png" alt="">
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</div>   
+  <div class="footer">
+    <div class="container">
+        <img src="img_1/logo/logo.png" alt="">
+        
+    <div class="menu">
+        <ul class="d-flex">
+            <li><a href="index.html">TRANG CHỦ</a> </li>
+            <li><a href="about.html">GIỚI THIỆU</a></li>
+            <li><a href="service.html">DỊCH VỤ</a></li>
+            <li><a href="stylist_hiring_service.html">STYLIST</a></li>
+            <li><a href="blog.html">KINH NGHIỆM</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+
+    <div class="social">
+        <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+        <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+        <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+        <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>  
+    </div>
+
+    <div class="footline">
+        <p>© Copyright 2016 | Beauty | All right reserved.</p>
+    </div> 
+    </div>
+    
+</div>
+<div class="backtop" onclick="backtop()"><i class="fa-solid fa-arrow-up-long"></i></div>
+
+
+
+
+
+
+
+
+      <!-- jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <!-- js bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/home.js"></script>
+      <script src="js/style.js"></script>
+      <script type="text/javascript" src="https://web.cmbliss.com/webtools/hotline/js/hotline.js"></script><script type="text/javascript">$("body").hotline({phone:"0909601286",p_bottom:true,bottom:0,p_left:true,left:0,bg_color:"#000",abg_color:"#0000009d",show_bar:true,position:"fixed",});</script>
+</body>
+</html>

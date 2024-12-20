@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+     
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Passions+Conflict&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Css bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Thư viện slick: https://kenwheeler.github.io/slick/ -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+
+        <!-- Global css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- local css -->
+        <link rel="stylesheet" href="css/stylist_hiring_detail.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="nav-box">
+                    <a class="navbar-brand" href="javascript:void(0)"><img src="img_1/logo/logo.png" alt="" /></a>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Dịch vụ</a>
+                                    <ul class="menu ">
+                                       <li><a href="service_wedding.html"> MAKEUP CÔ DÂU</a></li> 
+                                       <li><a href="service_event.html"> MAKEUP SỰ KIỆN</a></li> 
+                                       <li><a href="service_korea.html"> MAKEUP HÀN QUỐC</a></li> 
+                                       <li><a href="service_concept.html"> MAKEUP CONCEPT</a></li> 
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="stylist_hiring_service.html">Stylist</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Kinh nghiệm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-icon">
+                            <a href="javascript:;" class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+
+                        <div class="search">
+                            <input type="text" placeholder="Search" />
+                            <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                        <button class="nav-bar" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+
+                <div class="close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li>
+                        <a href="service.html">DỊCH VỤ</a>
+                        <ul class="submenu">
+                            <li><a href="service_wedding.html"> MAKEUP CÔ DÂU</a></li> 
+                            <li><a href="service_event.html"> MAKEUP SỰ KIỆN</a></li> 
+                            <li><a href="service_korea.html"> MAKEUP HÀN QUỐC</a></li> 
+                            <li><a href="service_concept.html"> MAKEUP CONCEPT</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="stylist_hiring_service.html">STYLIST</a></li>
+                    <li><a href="blog.html">KINH NGHIỆM</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+            
+                <div class="infor">
+                    <h6><i class="fa-solid fa-location-dot"></i> 94C Cao Thắng, P4, Q3</h6>
+                    <h6><i class="fa-solid fa-envelope"></i> yentang1212@gmail.com</h6>
+                    <h6><i class="fa-solid fa-phone-volume"></i> 0909 601 286</h6>
+                </div>
+                
+               <div class="social">
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+               </div>
+              
+                <h6>© Copyright 2016 | Beauty | All right reserved.</h6>
+               
+            </div>
+        </div>
+    
+    
+        <div class="banner_hiring_detail">
+            <div class="banner">
+                <div class="img"><img src="img_1/bg/bg-21.jpg" alt="" /></div>
+                <div class="content">
+                   
+                    <h2>STYLIST <br> <h4>TRANG CHỦ/STYLIST</h4></h2>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="img">
+                            <img src="img_1/stylist/stylist-8.jpg" alt="">
+                           
+                          
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                       <h3>Stylist Kim Thanh</h3>
+                       <div class="star"><i class="fa-solid fa-star" style="color: #4342425e; font-size: 12px; margin-right: 5px;"></i><i class="fa-solid fa-star" style="color: #4342425e; font-size: 12px; margin-right: 5px;"></i><i class="fa-solid fa-star" style="color: #4342425e; font-size: 12px; margin-right: 5px;"></i><i class="fa-solid fa-star" style="color: #4342425e; font-size: 12px; margin-right: 5px;"></i><i class="fa-solid fa-star" style="color: #4342425e; font-size: 12px; margin-right: 5px;"></i></div>
+                        <div class="price"><span>600.000/giờ</span></div>
+                        <div class="text"><p>Kim Thanh 28 tuổi, chuyên viên tư vấn và makeup cho các người mẫu nổi tiếng. Với kinh nghiệm 5 năm cô ấy đã tạo ra những style mới lạ hấp dẫn và được khách hàng đánh giá cao.</p></div>
+                        <div class="trademarks">
+                            <h6>Tác phẩm</h6>
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="thumb">
+                                        <img src="img_1/service-wedding/service-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="thumb">
+                                        <img src="img_1/service-event/service-12.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="thumb">
+                                        <img src="img_1/service-kore/service-13.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="thumb">
+                                        <img src="img_1/service-concept/service-11.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <h6> Chọn gói thuê</h6>
+                        <div class="time_hiring  ">
+                         
+                            <ul class="d-flex">
+                                <li datatime="600,000/giờ">
+                                    <p>Thuê theo giờ</p>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li datatime="3,000,000ngày">
+                                    <p>Thuê theo ngày</p>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                          
+                        </div>
+                      
+                            <div class="select">
+                                <div class="number">
+                                    
+                                    <div class="hour">
+                                            
+                                            <span class="typeClick" type="minus"><i class="fa-solid fa-minus"></i> </span>
+                                            <input type="text" name="quality" value="2" />
+                                            
+                                            <span class="typeClick" type="plus"><i class="fa-solid fa-plus"></i></span>
+                                    </div>
+                                   
+                                   
+                                </div>
+                               
+                            </div>
+                           
+                        
+                       
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="book">
+                    <form >
+                        <h5>Book stylist ngay</h5>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="infor">
+                                    <p>Thông tin cá nhân</p>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Họ Tên <span class="txt_red">(*)</span></label><span class="txt_red" id="error_name"></span></div>
+                                        <input type="text" class="form-control" id="txt_name"onblur="checkName();" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Điện thoại <span class="txt_red">(*)</span></label><span class="txt_red" id="error_phone"></span></div>
+                                        <input type="number" class="form-control" id="txt_phone"onblur="checkPhone();" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Email <span class="txt_red">(*)</span></label><span class="txt_red" id="error_email"></span></div>
+                                        <input type="email" class="form-control" id="txt_email"onblur="checkEmail();" >
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="infor">
+                                    <div class="address">
+                                        <p>Lịch hẹn</p>
+                                        <div class="form-group">
+                                            <div class="information"><label for="">Địa điểm<span class="txt_red">(*)</span></label><span class="txt_red" id="error_address_makeup"></span></div>
+                                            <input type="text"class="form-control" id="txt_address_makeup"  onblur="checkMakeup();">
+                                          
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="information"><label for="">Ngày<span class="txt_red">(*)</span></label><span class="txt_red" id="error_date"></span></div>
+                                            <input type="date"class="form-control" id="txt_date"  onblur="checkDate();">
+                                          
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="information"><label for="">Giờ<span class="txt_red">(*)</span></label><span class="txt_red" id="error_time"></span></div>
+                                            <input type="time"class="form-control" id="txt_time"  onblur="checkTime();">
+                                          
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="request">
+                                
+                                <div class="form-group">
+                                    <div class="information"><label for="">Ghi chú <span class="txt_red">(*)</span></label><span class="txt_red" id="error_note"></span></div>
+                                    <textarea type="text"class="form-control" id="txt_note" rows="10"  onblur="checkNote();"></textarea>
+                                  
+                                </div>
+                                <button type="submit" class="btn" onclick="send();"> <span><a href="index.html">BOOK NGAY</a></span> </button>
+                            </div>
+                        </div>
+                    </form>
+                  
+                
+                </div>
+            </div>
+           
+        </div>
+        
+   
+        <div class="description">
+            <div class="container">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="pill" href="#description">MÔ TẢ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="pill" href="#reviews">BÌNH LUẬN (3)</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane container active " id="description">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="content">
+                                    <p>Sử dụng dịch vụ này quý khách có thể thuê theo giờ hoặc thuê theo ngày. Thời gian tối thiểu là 3 tiếng đối với dịch vụ thuê giờ và tối thiểu 2 ngày đối với dịch vụ thuê ngày.
+                                    Đối với dịch vụ thuê theo giờ: tùy thuộc vào thời gian thuê ngắn hay dài của khách hàng sẽ bao gồm makeup tối đa 3 style theo yêu cầu, tư vấn trang phục, phụ kiện, layout, phong cách cá nhân cho phù hợp với buổi tiệc hoặc sự kiện quý khách tham gia. Đối với dịch bụ thuê theo ngày bao gồm: dưỡng da cho quý khách bằng mặt nạ cấp ẩm, makeup tối thiểu 4 style và tối đa tùy thuộc vào thời gian thuê ngắn hay dài hạn của quý khách, tư vấn trang phục, phong cách,layout, phụ kiện, hướng dẫn pose dáng (khi có yêu cầu). Stylist sẽ đồng hành xuyên suốt cùng quý khách để hỗ trợ phần dặm makeup.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane container fade" id="reviews">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="cmt ">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3 col-lg-3">
+                                            <div class="img"><img src="img_1/customer/customer_1.jpg" alt=""></div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9 col-lg-9">
+                                            <div class="content">
+                                                <h6>Ái Phương</h6>
+                                                <div class="icon"><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i></div>
+                                                <p>Thấy stylist đẹp là thấy niềm tin makeup cho mình đẹp à. Thật vậy mọi người ạ, makeup kiểu có tâm, lung linh lắm nè, tư vấn style nhiệt tình lắm. Giá cả như vậy mình thấy cũng ok á. Phải chi biết đến studio này sớm hơn.</p>
+                                                <span>18-02-2022 20:42</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3 col-lg-3">
+                                            <div class="img"><img src="img_1/customer/customer_2.jpg" alt=""></div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9 col-lg-9">
+                                            <div class="content">
+                                                <h6>Hạ Lan</h6>
+                                                <div class="icon"><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i></div>
+                                                <p>Mình chọn gói thuê theo giờ để dự sự kiện, chị stylist dễ thương cực kỳ, hỗ trợ mình xuyên suốt buổi tiệc, makeup đẹp lắm mọi người ạ, ai cũng khen xinh hết á. Chắc chắn sẽ tương tác lâu dài với studio này.</p>
+                                                <span>18-02-2023 11:22</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3 col-lg-3">
+                                            <div class="img"><img src="img_1/customer/customer_3.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9 col-lg-9">
+                                            <div class="content">
+                                                <h6>Thanh Hà</h6>
+                                                <div class="icon"><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 10px; margin-right: 5px;"></i></div>
+                                                <p>Lần đầu thấy một studio để giá rõ ràng và minh bạch như vậy. Rất là thích các kiểu makeup ở đây. Đặc biệt các chuyên gia trang điểm không chỉ xinh đẹp mà còn nhiệt tình hiểu ý khách hàng.</p>
+                                                <span>11-08-2019 10:42</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    
+                                </div>
+                                
+                                
+                                <p>Đánh giá của bạn về dịch vụ này</p>
+                                <div class="review_table">
+                                    <span>Địa chỉ email của bạn sẽ không công khai. Các trường bắt buộc được đánh dấu *</span>
+                                    <p>Đánh giá</p>
+                                    <div class="icon"><i class="fa-regular fa-star" style="color: #eabf61; font-size: 12; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 12; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 12; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 12; margin-right: 5px;"></i><i class="fa-regular fa-star" style="color: #eabf61; font-size: 12; margin-right: 5px;"></i></div>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <form action="">
+                                        <p>Tên *</p>
+                                        <input type="text" required>
+                                        <p>Email*</p>
+                                        <input type="text" required>
+                                        <button type="submit" class="btn btn-primary">GỬI ĐI</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trademark">
+            <div class="container">
+                <div class="slide-inner">
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/logo_chanel1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/Untitled-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/dior_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/Untitled-4.png" alt="">
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+       
+        <div class="footer">
+            <div class="container">
+                <img src="img_1/logo/logo.png" alt="">
+                
+            <div class="menu">
+                <ul class="d-flex">
+                    <li><a href="index.html">TRANG CHỦ</a> </li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li><a href="service.html">DỊCH VỤ</a></li>
+                    <li><a href="stylist_hiring_service.html">STYLIST</a></li>
+                    <li><a href="blog.html">KINH NGHIỆM</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        
+            <div class="social">
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>  
+            </div>
+       
+            <div class="footline">
+                <p>© Copyright 2016 | Beauty | All right reserved.</p>
+            </div> 
+            </div>
+            
+        </div>
+        <div class="backtop" onclick="backtop()"><i class="fa-solid fa-arrow-up-long"></i></div>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+       
+       
+        <script src="js/stylist_hiring_detail.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/style.js"></script>
+        <script type="text/javascript" src="https://web.cmbliss.com/webtools/hotline/js/hotline.js"></script><script type="text/javascript">$("body").hotline({phone:"0909601286",p_bottom:true,bottom:0,p_left:true,left:0,bg_color:"#000",abg_color:"#0000009d",show_bar:true,position:"fixed",});</script>
+    </body>
+</html>

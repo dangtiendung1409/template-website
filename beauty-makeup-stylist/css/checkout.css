@@ -1,0 +1,353 @@
+.banner-top {
+        position: relative;
+}
+.banner-top .item::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner-top .item .img img {
+        height: 500px;
+}
+
+.banner-top .item .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner-top .item .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner-top .item .content h2 {
+                top: 35%;
+        }
+        .banner-top .item .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+}
+@media (max-width: 575px) {
+        .banner-top .item .content h2 {
+                top: 35%;
+        }
+        .banner-top .item .content h4 {
+                margin-top: 90px;
+                top: 25%;
+        }
+        .banner-top .item .img img {
+                height: 250px;
+        }
+}
+.checkout {
+        margin-top: 50px;
+        margin-bottom: 10px;
+}
+.checkout .sale {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: 60px;
+}
+.checkout .sale .title {
+        padding: 13px;
+        border-top: 5px solid #000;
+        border-bottom: 1px solid #00000055;
+}
+.checkout .sale .title h4 {
+        font-size: 26px;
+        font-weight: 500;
+}
+.checkout .content {
+        padding: 13px;
+}
+.checkout .content input {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+        border: 1px solid #4645452d;
+}
+
+.checkout .content input:nth-child(5) {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        margin-top: 20px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        border: 1px solid #4645452d;
+}
+.checkout .infor {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        position: relative;
+
+        /* padding-bottom: 80px; */
+}
+.checkout .infor .content {
+        margin-top: -20px;
+}
+.checkout .infor .title {
+        padding: 13px;
+        border-top: 5px solid #000;
+        border-bottom: 1px solid #00000055;
+        margin-bottom: 20px;
+}
+.checkout .infor .title h4 {
+        font-size: 26px;
+        font-weight: 500;
+}
+.checkout .infor button {
+        background-color: transparent;
+        border: 1px solid #000;
+        margin-top: 40px;
+        padding: 8px;
+        width: 30%;
+        border-radius: 0;
+        font-size: 24px;
+        font-weight: 600;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.txt_red {
+        color: red;
+
+        font-style: italic;
+}
+.checkout .book .title {
+        padding: 13px;
+        border-top: 5px solid #000;
+        border-bottom: 1px solid #00000055;
+        margin-bottom: 20px;
+}
+.checkout .book .from-select {
+        width: 100%;
+        padding-right: 50px !important;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+        border: 1px solid #4645452d;
+}
+
+.checkout .payment {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+}
+.checkout .select .card {
+        border: none;
+        padding: 20px;
+        opacity: 0;
+
+        top: 40%;
+        padding: 40px;
+}
+.checkout .select .card.active {
+        opacity: 1;
+}
+.checkout .select .transfer {
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        padding: 10px;
+        left: 5%;
+}
+.checkout .select .transfer h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+}
+.checkout .select .transfer h6 {
+        font-size: 24px;
+        font-weight: 400;
+}
+.checkout .select .transfer h6 span {
+        font-size: 24px;
+        font-weight: 600;
+}
+.checkout .select .transfer.active {
+        opacity: 1;
+}
+.checkout .payment .title {
+        padding: 13px;
+        border-top: 5px solid #000;
+        border-bottom: 1px solid #00000055;
+        margin-bottom: 20px;
+}
+.checkout .payment .title h4 {
+        font-size: 26px;
+        font-weight: 500;
+}
+/* .checkout .payment .content .radio ul li input {
+        font-size: 24px;
+} */
+.checkout .select .card {
+        z-index: 99;
+}
+.checkout .select .card ul {
+        align-items: center;
+}
+.checkout .select .card ul li {
+        padding: 3px 6px;
+        margin-right: 20px;
+        border: 1px solid #24242481;
+        margin-top: 10px;
+        border-radius: 5px;
+}
+.checkout .select .card ul li.active {
+        border: 2px solid #000;
+}
+.checkout .select .card ul li img {
+        height: 50px;
+        width: 80px;
+        margin: 0 auto;
+}
+.checkout .select .card .text {
+        margin-left: 0;
+        margin-bottom: 15px;
+}
+.checkout .select .card .text h4 {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 10px;
+}
+
+.checkout .select input {
+        padding: 10px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid #4645452d;
+        outline: none;
+        margin-top: 0px;
+}
+
+.checkout .payment .pay button {
+        background-color: transparent;
+        border: 1px solid #000;
+        margin-top: 40px;
+        padding: 8px;
+        width: 30%;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: 600;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 78%;
+
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.checkout .infor .form-group .information {
+        margin-top: 20px;
+        margin-bottom: -15px;
+}
+.checkout .infor .form-group textarea {
+        margin-top: 20px;
+}
+.checkout .book .content {
+        margin-top: -20px;
+}
+.checkout .book .form-group .information {
+        margin-top: 15px;
+        margin-bottom: -15px;
+}
+.book {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.book.sticky {
+        position: sticky;
+        top: 60px;
+}
+.book .order .title {
+        border-bottom: 1px solid #00000055;
+        padding: 15px;
+}
+.book .order .content {
+        padding: 15px;
+}
+.book .order .content h6 {
+        font-size: 22px;
+        font-weight: 300;
+}
+.book .order .title h4 {
+        font-size: 24px;
+        font-weight: 600;
+}
+.book .sub_total .title {
+        border-top: 1px solid #00000055;
+        padding: 15px;
+}
+.book .sub_total .title h4 {
+        font-size: 24px;
+        font-weight: 600;
+}
+.book .sub_total .content h6 {
+        font-size: 20px;
+        font-weight: 300;
+}
+.book .total_price .title {
+        border-top: 1px solid #00000055;
+        padding: 15px;
+}
+.book .total_price .title h4 {
+        font-size: 24px;
+        font-weight: 600;
+}
+.book button {
+        background-color: transparent;
+        padding: 10px;
+        border: 3px solid #000;
+        font-size: 24px;
+        font-weight: 600;
+        border-radius: 0;
+        margin-bottom: 10px;
+        margin-left: 20px;
+}
+.book button a {
+        color: #000;
+}
+.book button a:hover {
+        color: #ffff;
+}
+.book button:hover a {
+        color: #ffff;
+}
+
+.book button:hover {
+        background-color: #000;
+        padding: 10px;
+
+        color: #ffff;
+}

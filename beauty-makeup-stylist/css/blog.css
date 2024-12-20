@@ -1,0 +1,254 @@
+body {
+        overflow-x: hidden;
+}
+
+.banner_blog {
+        position: relative;
+}
+.banner_blog::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner_blog .item img {
+        height: 500px;
+}
+
+.banner_blog .item .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner_blog .item .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner_blog .item .content h2 {
+                top: 35%;
+        }
+        .banner_blog .item .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+}
+@media (max-width: 575px) {
+        .banner_blog .item .content h2 {
+                top: 35%;
+        }
+        .banner_blog .item .content h4 {
+                margin-top: 90px;
+                top: 25%;
+        }
+        .banner_blog .item img {
+                height: 250px;
+        }
+        .news .left .card .img img {
+                height: 300px !important;
+        }
+}
+.news {
+        margin-top: 50px;
+}
+.news .left .card {
+        border: none;
+        margin-bottom: 40px;
+        transition: 0.5s;
+        overflow: hidden;
+        border-radius: 0;
+}
+.news .left .card:hover img {
+        transform: scale(1.2);
+}
+.news .left .card .img {
+        overflow: hidden;
+        margin-bottom: 20px;
+}
+.news .left .card .img img {
+        height: 500px;
+}
+.news .left .card span {
+        font-size: 20px;
+        font-weight: 300;
+        color: gray;
+        margin-bottom: 20px;
+}
+.news .left .card a {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #000;
+}
+.news .left .card a:hover {
+        text-decoration: underline;
+}
+.news .left .card h6 {
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 10px;
+}
+.news .left .card p {
+        font-size: 24px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgba(161, 160, 160, 0.384);
+        color: rgb(63, 62, 62);
+        padding-bottom: 30px;
+        font-weight: 300;
+}
+.news .left .card .read_more {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.news .left .card .read_more .text a {
+        font-size: 24px;
+        font-weight: 800;
+        color: #000000d0;
+}
+
+.news .left .card .read_more .social button {
+        border-radius: 0;
+        font-size: 20px;
+}
+.news .left .card .read_more button {
+        background-color: transparent;
+        border: none;
+        color: rgba(128, 128, 128, 0.541);
+}
+.news .right {
+        margin: 0 auto;
+}
+.news .right .avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+}
+.news .right .avatar p {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        margin: 30px auto;
+}
+.news .right .avatar .social {
+        text-align: center;
+}
+.news .right .avatar .social button {
+        border-radius: 0;
+        margin-bottom: 30px;
+        font-size: 24px;
+}
+.news .right .avatar button {
+        background-color: transparent;
+        border: none;
+        color: rgba(128, 128, 128, 0.541);
+        margin-left: -10px;
+        font-size: 16px;
+}
+.news .right .avatar .look_for {
+        border: 1px solid gainsboro;
+        width: 100%;
+        padding: 5px;
+        color: black;
+        font-size: 20px;
+        font-weight: 100;
+
+        margin-bottom: 50px;
+}
+.news .right .avatar .look_for input {
+        border: none;
+        outline: none;
+        font-size: 24px;
+}
+.news .right .avatar .look_for button {
+        font-size: 14px;
+        font-weight: 500;
+        background-color: transparent;
+        margin-right: 0;
+}
+.news .right .avatar .look_for button i {
+        margin-right: 0;
+}
+
+.news .right .categories {
+        margin: 0 auto;
+}
+.news .right .categories h4 {
+        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-top: 30px;
+        font-size: 26px;
+        font-weight: 600;
+}
+.news .right .categories ul {
+        margin-left: 20px;
+}
+.news .right .categories ul li {
+        list-style: square;
+        font-size: 24px;
+        font-weight: 300;
+}
+.news .right .categories ul li:hover {
+        font-weight: 500;
+}
+.news .right .categories ul li a {
+        color: #000;
+}
+.news .right .related_post {
+        margin-top: 40px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.news .right .related_post h4 {
+        margin-bottom: 30px;
+        margin-top: 40px;
+        font-size: 26px;
+        font-weight: 600;
+}
+
+.news .right .related_post .img {
+        margin-top: 20px;
+}
+.news .right .related_post .img img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border: none;
+}
+.news .right .related_post .title {
+        margin-top: 20px;
+}
+
+.news .right .related_post .title p {
+        font-size: 20px;
+        font-weight: 300;
+}
+.news .right .related_post .title a {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+}
+.news .right .related_post .title:hover a {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+}

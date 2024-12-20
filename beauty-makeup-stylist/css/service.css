@@ -1,0 +1,266 @@
+.banner_service {
+        position: relative;
+}
+.banner_service .banner::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner_service .banner .img img {
+        height: 500px;
+}
+
+.banner_service .banner .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner_service .banner .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner_service .banner .content h2 {
+                top: 35%;
+        }
+        .banner_service .banner .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+        .advantage_service .img img {
+                width: 100%;
+                height: 100%;
+        }
+}
+@media (max-width: 575px) {
+        .banner_service .banner .content h2 {
+                top: 35%;
+        }
+        .banner_service .banner .content h4 {
+                margin-top: 90px;
+                top: 25%;
+        }
+        .banner_service .banner .img img {
+                height: 250px;
+        }
+}
+.advantages {
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.advantages .content {
+        margin-bottom: 20px;
+}
+.advantages .content h2 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 30px;
+}
+.advantages .content p {
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-weight: 300;
+}
+
+.advantage_service {
+        margin-bottom: 30px;
+}
+
+.advantage_service .img img {
+        width: 30%;
+        height: 30%;
+
+        margin: 0 auto;
+}
+
+.advantage_service .text {
+        text-align: left;
+        margin-top: 20px;
+}
+.advantage_service .text h5 {
+        font-size: 24px;
+        font-weight: 600;
+}
+.advantage_service .text p {
+        font-size: 22px;
+        font-weight: 300;
+}
+.background {
+        height: 350px;
+        background-color: #cccccc;
+
+        background: url("img_1/bg/bg-1.jpg");
+}
+.service_makeup {
+        margin-top: -300px;
+        margin-bottom: 50px;
+        padding: 40px 0;
+        background-image: linear-gradient(to top, #ffffff61, #ffffff72), url(../img_1/bg/bg-17.jpg);
+}
+.service_makeup h2 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #000;
+}
+.service_makeup .card {
+        color: #ffff;
+        border-radius: 0;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        transition: 0.5s;
+}
+.service_makeup .card::before {
+        content: "";
+        width: 95%;
+        height: 95%;
+        border: 1px solid #ffffff66;
+        top: 2.5%;
+        left: 2.5%;
+        position: absolute;
+        z-index: 1;
+        transition: 0.5s;
+}
+.service_makeup .card:hover::before {
+        border: 1px solid #ffffffdc;
+        background-color: #e6dede7e;
+}
+.service_makeup .card img {
+        border-radius: 0;
+        height: 400px;
+        transition: 0.5s;
+}
+.service_makeup .card:hover img {
+        transform: scale(1.2);
+}
+
+.service_makeup .card p {
+        margin-top: 30px;
+}
+.service_makeup .card h4 {
+        text-align: left;
+        margin-top: 180px;
+        position: absolute;
+        z-index: 99;
+        font-family: "Passions Conflict", cursive;
+        font-size: 60px;
+        color: #000;
+        font-weight: 500;
+}
+.service_makeup .card .btn {
+        background-color: transparent;
+        border: 1px solid #000;
+        border-radius: 0;
+        text-align: center;
+        position: absolute;
+        top: 85%;
+        transition: 0.5s;
+        z-index: 2;
+        color: #000;
+        font-size: 24px;
+}
+.service_makeup .card:hover .btn {
+        top: 80%;
+}
+.service_makeup .card .btn:hover {
+        background-color: #000;
+        color: #ffff;
+}
+.service_stylist {
+        margin-top: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+.service_stylist .content .img img {
+        height: 323px;
+}
+.service_stylist .content h2 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #000;
+}
+.service_stylist .content p {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        color: #000;
+}
+.service_stylist .left {
+        margin-bottom: 20px;
+}
+.service_stylist .left h2 {
+        font-size: 45px;
+
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 40px;
+        margin-right: 30px;
+}
+.service_stylist .left img {
+        height: 520px;
+        margin-top: 20px;
+}
+
+.service_stylist .price {
+        margin-top: 85px;
+}
+.service_stylist .price .combo {
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 20px;
+}
+.service_stylist .price .combo .content h4 {
+        font-weight: 600;
+        margin-bottom: 28px;
+        color: #000;
+        font-size: 24px;
+}
+
+.service_stylist .price .combo p {
+        font-size: 24px;
+        color: #000000e3;
+        font-weight: 300;
+}
+
+.service_stylist .price button {
+        border: 1px solid #000;
+        border-radius: 0;
+        background-color: transparent;
+        text-align: center;
+        /* margin: 30px auto; */
+        padding: 15px 25px;
+        transition: 0.5s;
+        font-size: 24px;
+}
+.service_stylist button a {
+        color: #000;
+        font-weight: 600;
+}
+.service_stylist button:hover a {
+        color: #ffff;
+}
+.service_stylist button:hover {
+        background-color: #000 !important;
+        color: #ffff;
+}

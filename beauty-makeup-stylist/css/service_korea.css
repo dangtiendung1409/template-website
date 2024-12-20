@@ -1,0 +1,306 @@
+.banner_service_korea {
+        position: relative;
+}
+.banner_service_korea .banner::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner_service_korea .banner .img img {
+        height: 500px;
+}
+
+.banner_service_korea .banner .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner_service_korea .banner .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner_service_korea .banner .content h2 {
+                top: 35%;
+        }
+        .banner_service_korea .banner .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+}
+@media (max-width: 575px) {
+        .banner_service_korea .banner .content h2 {
+                top: 28%;
+        }
+        .banner_service_korea .banner .content h4 {
+                margin-top: 90px;
+                top: 37%;
+        }
+        .banner_service_korea .banner .img img {
+                height: 250px;
+        }
+}
+.product {
+        margin-top: 50px;
+}
+.product .card {
+        border: none;
+        margin-bottom: 20px;
+}
+.product .card .thumb {
+        overflow: hidden;
+        position: relative;
+}
+.product .card .img {
+        position: relative;
+}
+.product .card .img::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        opacity: 0;
+}
+.product .card:hover .img::before {
+        opacity: 1;
+}
+.product .card .img img {
+        height: 450px;
+}
+.product .card .service_name h4 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 10px;
+}
+.product .card h6 {
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+.product .card .icon i {
+        font-size: 10px;
+        margin-right: 2px;
+        margin-bottom: 20px;
+}
+
+.product .card .sale {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: #ffff;
+        justify-content: space-between;
+        padding: 4px 7px;
+        font-size: 20px;
+}
+.product .card .sale p {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0;
+}
+.product .card .price {
+        font-size: 26px;
+        font-weight: 600;
+}
+.product .card .price span {
+        font-weight: 100;
+        font-size: 20px;
+        color: gray;
+        text-decoration: line-through;
+}
+
+.product .card .btn {
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        border: 1px solid #000;
+        border-radius: 0;
+        padding: 5px;
+        background-color: transparent;
+        font-size: 24px;
+        transition: 0.5s;
+        opacity: 0;
+        color: #000;
+        font-weight: 600;
+}
+.product .card .btn::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 0;
+        color: #ffff;
+        transition: 0.5s;
+}
+.product .card .btn:hover:after {
+        width: 100%;
+        opacity: 1;
+        animation: run alternate 0.5s;
+}
+@keyframes run {
+        from {
+                width: 0;
+        }
+        to {
+                width: 100%;
+        }
+}
+.product .card:hover .btn {
+        opacity: 1;
+        bottom: 30px;
+}
+
+.product .card .btn:hover a {
+        color: #ffff;
+        z-index: 99;
+        position: relative;
+}
+.product .filter {
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #000;
+        margin-bottom: 30px;
+        align-items: center;
+}
+.product .filter h4 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 0;
+}
+
+.product .filter .form-select {
+        border-radius: 2px;
+        outline: none;
+
+        font-size: 20px;
+}
+.product .search_service {
+        padding: 0px;
+        width: 100%;
+        border-radius: none;
+        border: 1px solid rgba(165, 165, 165, 0.404);
+        position: relative;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        font-size: 20px;
+}
+.product .search_service input {
+        border: none;
+        outline: 0;
+        padding: 6px;
+}
+.product .right {
+        margin: 0 auto;
+}
+.product .right .search_service .btn {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        right: 2px;
+        top: 8%;
+        border-radius: 0;
+        position: absolute;
+}
+.product .right .tags {
+        margin-top: -15px;
+        text-align: center;
+        padding: 30px;
+        border-top: 1px solid #000;
+}
+.product .right .tags h4 {
+        margin-top: 20px;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 20px;
+}
+.product .right .tags ul {
+        text-align: center;
+}
+.product .right .tags ul li {
+        margin-bottom: 10px;
+        font-size: 24px;
+}
+.product .right .tags ul li:hover {
+        text-decoration: underline;
+}
+.product .right .tags ul li a {
+        margin: 0 auto;
+        color: #000;
+        text-align: center;
+}
+
+.product .right .categories {
+        margin-top: 20px;
+        border-top: 1px solid #000;
+}
+.product .right .categories h4 {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+}
+.product .right .categories .card {
+        margin-top: 20px;
+}
+.product .right .categories .card h6 {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+}
+.product .right .categories .price {
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 20px;
+}
+
+.product .right .categories .price span {
+        font-weight: 100;
+        font-size: 18px;
+        color: gray;
+        text-decoration: line-through;
+        margin-top: -50px;
+}
+.product .right .categories .card .img {
+        overflow: hidden;
+}
+.product .right .categories .card .img img {
+        height: 200px;
+        width: 150px;
+
+        margin: 0 auto;
+        transition: 0.5s;
+}
+.product .right .categories .card:hover .img img {
+        transform: scale(1.2);
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+     
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Passions+Conflict&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Css bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+         <!-- Thư viện slick: https://kenwheeler.github.io/slick/ -->
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+         <link rel="stylesheet" href="css/slick.css" />
+        <!-- Global css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- local css -->
+        <link rel="stylesheet" href="css/service_concept.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="nav-box">
+                    <a class="navbar-brand" href="javascript:void(0)"><img src="img_1/logo/logo.png" alt="" /></a>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Dịch vụ</a>
+                                    <ul class="menu ">
+                                       <li><a href="service_wedding.html"> MAKEUP CÔ DÂU</a></li> 
+                                       <li><a href="service_event.html"> MAKEUP SỰ KIỆN</a></li> 
+                                       <li><a href="service_korea.html"> MAKEUP HÀN QUỐC</a></li> 
+                                       <li><a href="service_concept.html"> MAKEUP CONCEPT</a></li> 
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="stylist_hiring_service.html">Stylist</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Kinh nghiệm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-icon">
+                            <a href="javascript:;" class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+
+                        <div class="search">
+                            <input type="text" placeholder="Search" />
+                            <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                        <button class="nav-bar" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+
+                <div class="close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li>
+                        <a href="service.html">DỊCH VỤ</a>
+                        <ul class="submenu">
+                            <li><a href="service_wedding.html"> MAKEUP CÔ DÂU</a></li> 
+                            <li><a href="service_event.html"> MAKEUP SỰ KIỆN</a></li> 
+                            <li><a href="service_korea.html"> MAKEUP HÀN QUỐC</a></li> 
+                            <li><a href="service_concept.html"> MAKEUP CONCEPT</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="stylist_hiring_service.html">STYLIST</a></li>
+                    <li><a href="blog.html">KINH NGHIỆM</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+            
+                <div class="infor">
+                    <h6><i class="fa-solid fa-location-dot"></i> 94C Cao Thắng, P4, Q3</h6>
+                    <h6><i class="fa-solid fa-envelope"></i> yentang1212@gmail.com</h6>
+                    <h6><i class="fa-solid fa-phone-volume"></i> 0909 601 286</h6>
+                </div>
+                
+               <div class="social">
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>
+               </div>
+              
+                <h6>© Copyright 2016 | Beauty | All right reserved.</h6>
+               
+            </div>
+        </div>
+
+        <div class="banner_service_concept">
+            <div class="banner">
+                <div class="img"><img src="img_1/service-concept/service-bg.jpg" alt="" /></div>
+                <div class="content">
+                    <h2>MAKEUP CONCEPT <br><h4>TRANG CHỦ/ DỊCH VỤ / MAKEUP CONCEPT</h4></h2>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 -col-sm-12 col-md-7 col-lg-8">
+                        <div class="filter ">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-5 col-sm-5 col-md-8 col-lg-8">
+                                    <h4>Trang Điểm Concept</h4>
+                                </div>
+                                <div class="col-7 col-sm-7 col-md-4 col-lg-4">
+                                    <select class="form-select">
+                                        <option> <a href="#all"> Bộ lọc</a></option>
+                                        <option> <a href="#low">Giá: thấp đến cao</a></option>
+                                        <option> <a href="#hight">Giá: cao đến thấp</a></option>
+                                        
+                                      </select>
+                                </div>
+                            </div>
+                            
+                          
+                           
+                        </div>
+                        <div class="row">
+                            
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-4.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style nhẹ nhàng</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-11.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style cá tính</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+                                           
+
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-5.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style doanh nhân</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div> 
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-8.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style cá tính</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-10.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style tiểu thư</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-3.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style nhẹ nhàng</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-6.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style tiểu thư</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-2.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style doanh nhân</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                        <div class="card">
+                                            <div class="thumb">
+                                                <div class="img"><img src="img_1/service-concept/service-9.jpg" alt=""></div>
+                                                <button type="button" class="btn btn-primary"><a href="service_detail.html">Book ngay</a></button>
+                                                
+                                                <div class="sale"><p>-20%</p></div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="service_name"> <h6>Trang điểm concept</h6></div>
+                                                <h4 class="type">Style nhẹ nhàng</h4>
+                                                <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                                <div class="price">720,000  <span>900,000 </span></div>
+                                            </div>
+
+
+                                        </div>
+                                    </div> 
+                                   
+                                    
+
+                             
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                        <div class="right">
+                            <div class="search_service">
+                                <input type="text" placeholder="Tìm kiếm">
+                                <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        
+                            <div class="tags">
+                                <h4>Từ khóa</h4>
+                                <ul >
+                                    <li><a href="">Cá tính</a></li>
+                                    <li><a href="">Tiểu thư</a></li>
+                                    <li><a href="">Doanh nhân</a></li>
+                                    <li><a href="">Nhẹ nhàng</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            <div class="categories">
+                                <h4>Style makeup được ưa chuộng nhất</h4>
+                                
+                                <div class="card">
+                                    <div class="img"><img src="img_1/service-concept/service-11.jpg" alt=""></div>
+                                    <h4 class="type">Style cá tính</h4>
+                                    <div class="price">720,000  <span>900,000 </span></div>
+                                </div>
+                                <div class="card">
+                                    <div class="img"><img src="img_1/service-concept/service-8.jpg" alt=""></div>
+                                    <h4 class="type">Style cá tính</h4>
+                                    <div class="price">720,000  <span>900,000 </span></div>
+                                </div>
+                                <div class="card">
+                                    <div class="img"><img src="img_1/service-concept/service-10.jpg" alt=""></div>
+                                    <h4 class="type">Style tiểu thư</h4>
+                                    <div class="price">720,000  <span>900,000 </span></div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trademark">
+            <div class="container">
+                <div class="slide-inner">
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/logo_chanel1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/Untitled-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/dior_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="col">
+                            <img src="img_1/logo/Untitled-4.png" alt="">
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <img src="img_1/logo/logo.png" alt="">
+                
+            <div class="menu">
+                <ul class="d-flex">
+                    <li><a href="index.html">TRANG CHỦ</a> </li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li><a href="service.html">DỊCH VỤ</a></li>
+                    <li><a href="stylist_hiring_service.html">STYLIST</a></li>
+                    <li><a href="blog.html">KINH NGHIỆM</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        
+            <div class="social">
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-facebook"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-instagram"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-twitter"></i></button>
+                <button class="btn btn-secondary" type="button"><i class="fa-brands fa-tiktok"></i></i></button>  
+            </div>
+       
+            <div class="footline">
+                <p>© Copyright 2016 | Beauty | All right reserved.</p>
+            </div> 
+            </div>
+            
+        </div>
+        <div class="backtop" onclick="backtop()"><i class="fa-solid fa-arrow-up-long"></i></div>
+             
+        
+        
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/style.js"></script>
+        <script type="text/javascript" src="https://web.cmbliss.com/webtools/hotline/js/hotline.js"></script><script type="text/javascript">$("body").hotline({phone:"0909601286",p_bottom:true,bottom:0,p_left:true,left:0,bg_color:"#000",abg_color:"#0000009d",show_bar:true,position:"fixed",});</script>
+        
+       
+    </body>
+</html>

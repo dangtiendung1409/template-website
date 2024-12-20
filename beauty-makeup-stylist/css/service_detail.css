@@ -1,0 +1,664 @@
+body {
+        overflow-x: hidden;
+}
+.banner_service_detail {
+        position: relative;
+}
+.banner_service_detail .banner::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner_service_detail .banner .img img {
+        height: 500px;
+}
+
+.banner_service_detail .banner .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner_service_detail .banner .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner_service_detail .banner .content h2 {
+                top: 35%;
+        }
+        .banner_service_detail .banner .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+        .add.active {
+                right: 200px;
+        }
+}
+@media (max-width: 575px) {
+        .banner_service_detail .banner .content h2 {
+                top: 30%;
+        }
+        .banner_service_detail .banner .content h4 {
+                margin-top: 90px;
+                top: 37%;
+        }
+        .banner_service_detail .banner .img img {
+                height: 250px;
+        }
+        .add.active {
+                right: 100px;
+        }
+}
+
+.detail {
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.detail .img {
+        position: relative;
+        margin-bottom: 30px;
+}
+.detail .img img {
+        height: 530px;
+}
+.detail .img .sale {
+        position: absolute;
+        top: 10px;
+        background-color: #ffff;
+        right: 10px;
+        padding: 5px;
+        font-weight: 600;
+}
+
+.detail .service_picture {
+        justify-content: space-between;
+}
+.detail .service_picture .picture {
+        margin-bottom: 20px;
+}
+.detail .service_picture .picture ul {
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+}
+.detail .service_picture .picture ul li {
+        margin: 10px auto;
+}
+
+.detail .service_picture .picture ul li.active {
+        border: 1px solid #000;
+}
+.detail .service_picture .picture img {
+        height: 150px;
+        width: 120px;
+        margin-right: 2px;
+}
+.detail .star {
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.detail h3 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #000000d3;
+}
+.detail span {
+        font-size: 24px;
+        font-weight: 500;
+        color: #000;
+}
+.detail .price {
+        color: #000;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: -20px;
+        margin-top: -10px;
+}
+.detail .price span {
+        color: rgb(128, 123, 123);
+        text-decoration: line-through;
+        font-size: 24px;
+        margin-left: 10px;
+        font-weight: 400;
+}
+.detail .text {
+        margin-top: 30px;
+}
+.detail .text p {
+        font-size: 24px;
+        margin-bottom: 20px;
+}
+
+.select .number {
+        margin-right: -80px;
+}
+.select .number h6 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        text-decoration: underline;
+}
+.select .number button {
+        background-color: #000;
+        border-radius: 0;
+        border: none;
+        width: 20%;
+        margin: 30px 20px;
+        color: #ffff;
+        font-size: 24px;
+}
+
+.select .number .select_number {
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+}
+.select .number .select_number h6 {
+        font-weight: 300;
+        font-size: 24px;
+        margin-right: 10px;
+        margin-top: 30px;
+}
+.select .number .select_number input {
+        padding: 6px 10px;
+        text-align: center;
+        border: 1px solid #504e4e7a;
+        margin-right: 10px;
+        font-size: 24px;
+}
+.select .number .select_number .typeClick {
+        background-color: #000;
+        color: #ffff;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 14px;
+}
+
+.add {
+        position: fixed;
+        top: 20px;
+        right: -300px;
+        width: 300px;
+        transition: all 0.2s;
+        z-index: 99999;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+        border-radius: 16px;
+        padding: 18px;
+}
+.add.active {
+        right: 20px;
+}
+.add .s_title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        color: #000;
+        margin-bottom: 0;
+}
+.add .product {
+        display: flex;
+        padding-top: 15px;
+        border-top: 1px solid #d9d9d9;
+        margin-top: 15px;
+        padding-bottom: 5px;
+}
+.add .product .img {
+        width: 40%;
+        position: relative;
+}
+.add .product .img img {
+        width: 80%;
+        height: 70%;
+        overflow: hidden;
+}
+.add .product .content {
+        display: flex;
+        flex-flow: column;
+        width: 60%;
+}
+.add .product .content p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0px;
+}
+.add .product .content p span {
+        font-size: 18px;
+        font-weight: 600;
+}
+.add .product .content .title {
+        font-weight: 600;
+        font-size: 18px;
+        color: #000;
+}
+.add .product .content .price_1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+}
+.add .product .content .price_1 .discount {
+        color: #000;
+        font-weight: 600;
+        margin-right: 7px;
+        font-size: 32px;
+}
+
+.add .s_button {
+        display: block;
+        text-decoration: underline;
+        border: none;
+        text-align: center;
+        padding: 6px 6px 12px;
+        border-radius: 0;
+        font-weight: 800;
+}
+
+.detail .trademarks {
+        margin-bottom: -20px;
+}
+
+.detail .trademarks h6 {
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin-bottom: 20px;
+}
+.detail .trademarks ul {
+        flex-wrap: wrap;
+}
+.detail .trademarks ul li {
+        border: 1px solid #0000002f;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+}
+.detail .trademarks ul li.active {
+        border: 2px solid #000;
+}
+.detail .trademarks ul li img {
+        height: 80px;
+        width: 120px;
+        padding: 0 5px;
+}
+
+.detail .hair_style h6 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+}
+.hair_style ul {
+        display: flex;
+        flex-wrap: wrap;
+}
+.hair_style ul li {
+        text-align: center;
+        border: 1px solid #0000002f;
+        font-size: 20px;
+        /* width: 30%; */
+        border-radius: 5%;
+        margin-right: 10px;
+        padding: 5px;
+        margin-bottom: 20px;
+}
+.hair_style ul li.active {
+        border: 2px solid #000;
+}
+
+.description .nav-pills .nav-item .nav-link {
+        color: #000;
+        border-radius: 0;
+        margin-right: 20px;
+        font-weight: 600;
+        border-bottom: transparent;
+        font-size: 26px;
+}
+.description .nav-pills .nav-item .nav-link.active {
+        color: black;
+        background-color: transparent;
+        border-bottom: 1px solid #000;
+
+        border-radius: 0;
+        font-weight: 600;
+}
+
+.description .tab-content .tab-pane {
+        margin-top: 30px;
+        border: 1px solid #0000001a;
+        padding: 20px;
+}
+.description .tab-content .content p {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+}
+.description .tab-content .tab-pane .cmt {
+        align-items: center;
+        margin-bottom: 50px;
+}
+.description .tab-content .tab-pane .cmt .img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+}
+.description .tab-content .tab-pane .cmt .content {
+        margin-bottom: 20px;
+}
+.description .tab-content .tab-pane .cmt .content h6 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #000;
+        margin-top: 10px;
+}
+.description .tab-content .tab-pane .cmt .content p {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 300;
+}
+.description .tab-content .tab-pane .cmt .content .icon {
+        margin-bottom: 10px;
+}
+.description .tab-content .tab-pane .cmt .content .icon i {
+        font-size: 12px !important;
+}
+.description .tab-content .tab-pane .cmt .content span {
+        font-size: 20px;
+        color: #0000005f;
+}
+.description .tab-content .tab-pane span {
+        font-size: 14px;
+}
+.description .tab-content .tab-pane p {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+}
+.description .tab-content .tab-pane .review_table {
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+.description .tab-content .tab-pane .review_table span {
+        font-size: 22px;
+        margin-bottom: 30px;
+}
+.description .tab-content .tab-pane .review_table p {
+        font-size: 22px;
+        text-align: left;
+        margin-top: 20px;
+}
+.description .tab-content .tab-pane .review_table .icon {
+        margin-bottom: 30px;
+        transition: 0.5s;
+}
+
+.description .tab-content .tab-pane .review_table textarea {
+        width: 100%;
+        outline: none;
+        padding: 10px;
+        border: 1px solid #0000006a;
+}
+.description .tab-content .tab-pane .review_table input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #0000006a;
+}
+input[type="date" i] {
+        font-weight: 10;
+}
+.description .tab-content .tab-pane .review_table button {
+        margin-top: 50px;
+
+        border-radius: 0;
+        background-color: transparent;
+        border: 2px solid #000;
+        color: #000;
+        padding: 10px 35px;
+
+        transition: 0.5s;
+
+        bottom: 30px;
+
+        font-size: 24px;
+        font-weight: 600;
+}
+.description .tab-content .tab-pane .review_table button:hover {
+        background-color: #000;
+        color: #ffff;
+}
+.description .tab-content .review_table {
+        padding: 30px;
+        margin: 0 auto;
+}
+
+.service_other {
+        margin-bottom: 80px;
+}
+.service_other .card {
+        border: none;
+        position: relative;
+}
+.service_other .title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding: 7px;
+        background-color: #000;
+        color: #ffff;
+        margin-bottom: 30px;
+        text-align: center;
+}
+.service_other .card .img_1 {
+        overflow: hidden;
+}
+.service_other .card .img_1 img {
+        height: 350px;
+        cursor: pointer;
+        transition: 0.5s;
+}
+.service_other .card:hover .img_1 img {
+        transform: scale(1.2);
+}
+
+.service_other .card .btn {
+        position: absolute;
+        bottom: 100px;
+        margin-bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        padding: 5px;
+        background-color: rgb(43, 42, 42);
+        transition: 0.5s;
+        opacity: 0;
+        font-size: 24px;
+}
+.service_other .card:hover .btn {
+        opacity: 1;
+        bottom: 180px;
+}
+.service_other .card h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+}
+.service_other .card .type {
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000;
+}
+
+.service_other .card .price {
+        font-weight: 600;
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+}
+.service_other .card .price span {
+        font-weight: 100;
+        font-size: 20px;
+        color: gray;
+        text-decoration: line-through;
+}
+.service_other .card .btn {
+        position: absolute;
+        bottom: 100px;
+        margin-bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        border: 1px solid #000;
+        border-radius: 0;
+        padding: 5px;
+        background-color: transparent;
+        color: #000;
+        transition: 0.5s;
+        opacity: 0;
+        font-weight: 600;
+}
+.service_other .card .btn:hover {
+        background-color: #000;
+        color: #ffff;
+}
+
+.add .s-popup-2 .s_button {
+        display: block;
+
+        text-align: center;
+
+        font-weight: 500;
+}
+.add a {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        color: #000;
+        font-size: 20px;
+        transition: 0.5s;
+}
+.add a:hover {
+        border-bottom: 2px solid #242323;
+        width: 40%;
+}
+.select .number h6 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        margin-right: 10px;
+}
+.select .press {
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+.select .press .btn {
+        background-color: #000;
+        border-radius: 0;
+
+        padding: 4px 6px;
+        margin-right: 20px;
+        color: #ffff;
+        font-size: 24px;
+        position: relative;
+}
+.select .press .btn a {
+        color: #000;
+}
+.select .press .btn:hover a {
+        color: #ffff;
+}
+.select .press .btn:hover {
+        background-color: transparent;
+        color: #000;
+
+        border: 1px solid #000;
+}
+
+.select .press .btn_1 {
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid #000;
+        color: #000;
+
+        padding: 3px 5px;
+        font-size: 24px;
+}
+
+.select .press .btn_1:hover {
+        background-color: #000;
+        border-radius: 0;
+
+        color: #ffff;
+
+        padding: 3px 5px;
+        font-size: 24px;
+}
+.select .press .btn_1 a {
+        color: #000;
+}
+.select .press .btn_1:hover a {
+        color: #ffff;
+}
+.select .press .btn_1 a:hover {
+        color: #ffff;
+}
+
+.select .number .select_number {
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+}
+.select .number .select_number h6 {
+        font-weight: 300;
+        font-size: 24px;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+.select .number .select_number input {
+        width: 15%;
+        padding: 3px;
+        text-align: center;
+        border: 1px solid #504e4e7a;
+        margin-right: 10px;
+        font-size: 24px;
+}
+.select .number .select_number .typeClick {
+        background-color: #000;
+        color: #ffff;
+        padding: 8px 12px;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 10px;
+}
